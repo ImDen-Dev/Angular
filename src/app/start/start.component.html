@@ -1,0 +1,23 @@
+<!--<p>{{ title }}</p>-->
+<!--<p>-->
+<!--  <strong>{{ num - 2 }}</strong>-->
+<!--</p>-->
+<!--<p>-->
+<!--  <strong>{{ arr }}</strong>-->
+<!--</p>-->
+
+<!--<p>{{ obj.c.d }}</p>-->
+<!--<p>{{ 40 + 2 }}</p>-->
+<!--<p>{{ 'Hello ' + 'World' }}</p>-->
+
+<!--<img [src]="img" alt="" style="width: 300px" />-->
+<button (click)="onClick()">Click Me</button>
+<input
+  type="text"
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+/>
+<p>
+  <strong>{{ inputValue }}</strong>
+</p>

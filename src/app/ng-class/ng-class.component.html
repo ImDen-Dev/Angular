@@ -1,0 +1,11 @@
+<p>ng-class works!</p>
+
+<button (click)="bgToggle = !bgToggle">Bg Toggle</button>
+<!--<p [ngClass]="{ red: bgToggle, blue: !bgToggle }">-->
+<!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam!-->
+<!--</p>-->
+
+<p [class.blue]="!bgToggle" [class.red]="bgToggle">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae,
+  voluptatibus!
+</p>
