@@ -18,6 +18,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ComponentsInDetailComponent } from './components-in-detail/components-in-detail.component';
 import { PostFormComponent } from './components-in-detail/post-form/post-form.component';
 import { PostsComponent } from './components-in-detail/posts/posts.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { StyleDirective } from './directives/directive/style.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { PostsComponent } from './components-in-detail/posts/posts.component';
     PipesComponent,
     ComponentsInDetailComponent,
     PostFormComponent,
-    PostsComponent
+    PostsComponent,
+    DirectivesComponent,
+    StyleDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
