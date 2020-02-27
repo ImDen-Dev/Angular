@@ -20,6 +20,7 @@ import { PostFormComponent } from './components-in-detail/post-form/post-form.co
 import { PostsComponent } from './components-in-detail/posts/posts.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { StyleDirective } from './directives/directive/style.directive';
+import { IfnotDirective } from './directives/directive/ifnot.directive';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { StyleDirective } from './directives/directive/style.directive';
     PostFormComponent,
     PostsComponent,
     DirectivesComponent,
-    StyleDirective
+    StyleDirective,
+    IfnotDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

@@ -1,6 +1,41 @@
 <div class="container">
   <h1>Directives</h1>
-  <p appStyle="red">
+  <p
+    appStyle="red"
+    fontWeight="bold"
+    [dStyles]="{
+      border: '1px solid red',
+      borderRadius: '5px',
+      fontWeight: 'bold'
+    }"
+  >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, itaque.
   </p>
+  <p
+    appStyle="green"
+    [dStyles]="{
+      border: '2px solid blueviolet',
+      borderRadius: '10px',
+      fontWeight: 'regular'
+    }"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, itaque.
+  </p>
+
+  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
+
+  <!--  <div class="wrap" *ngIf="isVisible">-->
+  <!--    <p>-->
+  <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium-->
+  <!--      beatae cupiditate deleniti eaque earum iure libero perferendis sed-->
+  <!--      similique, suscipit!-->
+  <!--    </p>-->
+  <!--  </div>  -->
+  <div class="wrap" *appIfnot="isVisible">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+      beatae cupiditate deleniti eaque earum iure libero perferendis sed
+      similique, suscipit!
+    </p>
+  </div>
 </div>
